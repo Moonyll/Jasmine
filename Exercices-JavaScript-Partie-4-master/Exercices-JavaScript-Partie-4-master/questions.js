@@ -66,8 +66,17 @@ var valeurAbsolueArray = function (array) {
         absValue = Math.abs(array[i]);
         new_array.push(absValue);
     }
-    return new_array;        
+    return new_array;
 }
+/*
+var valeurAbsolueArray = function (array) {
+       array = array.map(function(o){
+        return Math.abs(o);
+    });
+    return array;
+La méthode map() crée un nouveau tableau avec les résultats de l'appel d'une fonction fournie
+sur chaque élément du tableau appelant.
+*/
 var sufaceCercle = function (rayon) {
     var s = Math.round(Math.PI*rayon*rayon);
     return s;
